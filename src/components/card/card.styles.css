@@ -1,8 +1,8 @@
 .card-container {
   display: flex;
   flex-direction: column;
-  background-color: #95dada;
-  border: 1px solid grey;
+  background-color: #269898;
+  border: 1px solid rgb(250, 250, 250);
   border-radius: 5px;
   padding: 25px;
   cursor: pointer;
@@ -10,8 +10,32 @@
   backface-visibility: hidden;
   transform: translateZ(0);
   transition: transform 0.25s ease-out;
+  position: relative;
+  top: calc(50% - 175px);
+  left: calc(50% - 125px);
+  background: inherit;
+  border-radius: 2px;
+  overflow: hidden;
+  
+
 }
 
 .card-container:hover {
   transform: scale(1.05);
+  background: linear-gradient(45deg, #dd2929, #ee7e14, #b7e046, #0c85bd, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
+
 }
+
+
+.trans>img {
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+} 
+
+.trans>img:hover{
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
